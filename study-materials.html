@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>.study-materials | Phymatics Champions Club</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        a {
+            text-decoration: none;
+            color: #6c5ce7;
+        }
+
+        a:hover {
+            color: #000;
+        }
+
+        /* Header Styles */
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin:0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Main Style */
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #d6d46a;
+        }
+
+        /* Home Page Style */
+
+        .hero {
+            background-image: linear-gradient(to bottom, #d9e75c, #ffffff);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        .featured-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .featured-content ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .featured-content li {
+            margin-right: 20px;
+        }
+
+        /* About Page Styles */
+
+        .about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .about h1 {
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            margin-bottom: 20px;
+        }
+
+        /* Contact Page Style */
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact h1 {
+            margin-bottom: 20px;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact label {
+            margin-bottom: 10px;
+        }
+
+        .contact input[type="text"], .contact input[type="email"], .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .contact input[type="submit"] {
+            background-color: #6c5ce7;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Location Page Style */
+
+        .location {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .location h1 {
+            margin-bottom: 20px;
+        }
+
+        #map {
+            width: 100%;
+            height: 400px;
+            border: 1px solid #ccc;
+        }
+
+        /* Registration Page Style */
+
+        .registration {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .registration h1 {
+            margin-bottom: 20px;
+        }
+
+        .registration form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .registration label {
+            margin-bottom: 10px;
+        }
+
+        .registration input[type="text"], .registration input[type="email"], .registration input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .registration input[type="submit"] {
+            background-color: #6c5ce7;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Study Materials Page Styles */
+
+        .study-materials {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .study-materials h1 {
+            margin-bottom: 20px;
+        }
+
+        .study-materials ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .study-materials li {
+            margin-bottom: 20px;
+        }
+
+        /* Youtube Videos Page Styles */
+
+        .youtube-videos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .youtube-videos h1 {
+            margin-bottom: 20px;
+        }
+    </style>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="study-materials.html">Study Materials</a></li>
+                    <li><a href="youtube-videos.html">Youtube Videos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            header {
+                background-color: #333;
+                color: #fff;
+                padding: 20px;
+                text-align: center;
+            }
+
+            main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+
+            .study-materials {
+                background-color: #f7f7f7;
+                padding: 20px;
+                margin-bottom: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .study-materials h2 {
+                margin-top: 0;
+            }
+
+            .study-materials ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .study-materials li {
+                margin-bottom: 10px;
+            }
+
+            .study-materials a {
+                text-decoration: none;
+                color: #337ab7;
+            }
+
+            .study-materials a:hover {
+                color: #23527c;
+            }
+        </style>
+        <header>
+            <h1>Study Materials</h1>
+        </header>
+        <h1><center><strong>"A" LEVEL STUDY MATERIALS</strong></center></h1>
+        <div class="gallery">
+        <style>
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+            }
+
+            .image-container {
+                position: relative;
+            }
+
+            .image-container img {
+                width: 100%;
+                height: auto;
+            }
+
+            .download-button {
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                background-color: #337ab7;
+                color: #fff;
+                padding: 5px 10px;
+                border-radius: 5px;
+                cursor: pointer;
+                text-decoration: none;
+            }
+
+            .download-button:hover {
+                background-color: #23527c;
+            }
+        </style>
+        <div class="papers">
+            <img src="A-1.jpg"alt="image" width="500">
+            <a href="A-1.jpg" download="A-1.jpg" class="download-button">Download</a>
+        </div>
+        <div class="papers">
+            <img src="A-2.jpg" alt="image" width="500">
+            <a href="A-2.jpg" download="A-2.jpg" class="download-button">Download</a>
+        </div>
+        <div class="papers">
+            <img src="A-3.jpg" alt="image" width="500">
+            <a href="A-3.jpg" download="A-3.jpg" class="download-button">Download</a>
+        </div>
+        <div class="papers">
+            <img src="A-4.jpg" alt="image" width="500">
+            <a href="A-4.jpg" download="A-4.jpg" class="download-button">Download</a>
+        </div>
+        <div class="papers">
+            <img src="A-5.jpg" alt="image" width="500">
+            <a href="A-5.jpg" download="A-5.jpg" class="download-button">Download</a>
+        </div>
+        <div class="papers">
+            <img src="A-6.jpg" alt="image" width="500">
+            <a href="A-6.jpg" download="A-6.jpg" class="download-button">Download</a>
+        </div><br><br>
+        <h1><center><strong>"O" LEVEL STUDY MATERIALS</strong></center></h1><br><br>
+        <div class="papers">
+            <img src="O-1.jpg" alt="image" width="500">
+            <a href="O-1.jpg" download="O-1.jpg" class="download-button">Download</a>
+        </div>
+        <div class="papers">
+            <img src="O-2.jpg" alt="image" width="500">
+            <a href="O-2.jpg" download="O-2.jpg" class="download-button">Download</a>
+        </div>
+        <div class="papers">
+            <img src="O-3.jpg" alt="image" width="500">
+            <a href="O-3.jpg" download="O-3.jpg" class="download-button">Download</a>
+        </div>
+        <div class="papers">
+            <img src="O-4.jpg" alt="image" width="500">
+            <a href="O-4.jpg" download="O-4.jpg" class="download-button">Download</a>
+        </div>
+        <div class="papers">
+            <img src="O-5.jpg" alt="image" width="500">
+            <a href="O-5.jpg" download="O-4.jpg" class="download-button">Download</a>
+        </div>
+        <div class="papers">
+            <img src="O-6.jpg" alt="image" width="500">
+            <a href="O-6.jpg" download="O-6.jpg" class="download-button">Download</a>
+        </div>
+        <div class="papers">
+            <img src="O-7.jpg" alt="image" width="500">
+            <a href="O-7.jpg" download="O-7.jpg" class="download-button">Download</a>
+        </div>
+        <div class="papers">
+            <img src="O-8.jpg" alt="image" width="500">
+            <a href="O-8.jpg" download="O-8.jpg" class="download-button">Download</a>
+        </div>
+        <div class="papers">
+            <img src="O-9.jpg" alt="image" width="500">
+            <a href="O-9.jpg" download="O-9.jpg" class="download-button">Download</a>
+        </div>
+        <div class="papers">
+            <img src="O-10.jpg" alt="image" width="500">
+            <a href="O-10.jpg" download="O-10.jpg" class="download-button">Download</a>
+        </div>
+        <div class="papers">
+            <img src="O-11.jpg" alt="image" width="500">
+            <a href="O-11.jpg" download="O-11.jpg" class="download-button">Download</a>
+        </div>
+        <div class="papers">
+            <img src="O-12.jpg" alt="image" width="500">
+            <a href="O-12.jpg" download="O-12.jpg" class="download-button">Download</a>
+        </div>
+        <div class="papers">
+            <img src="O-13.jpg" alt="image" width="500">
+            <a href="O-13.jpg" download="O-13.jpg" class="download-button">Download</a>
+        </div>
+        <div class="papers">
+            <img src="O-14.jpg" alt="image" width="500">
+            <a href="O-14.jpg" download="O-14.jpg" class="download-button">Download</a>
+        </div><br><br><br>
+            </section>
+        </main>
+    </body>
+    <style>
+        footer {
+        background-color: #d88863;
+        color: #965a5a;
+        padding: 1em;
+        text-align: center;
+    }
+    </style>
+    <footer>
+        <p><strong>Get in touch</strong></p>
+        <p>Reach us via Whatsapp</p>
+        <p>0773554329</p>
+        <p><strong>Email</strong></p>
+        <p>@; baziradathan@gmail.com</p><br><br>
+        <p><strong><center>&copy; 2026 Phymatics Champions Club</center></strong></p>
+    </footer>
+</html>
